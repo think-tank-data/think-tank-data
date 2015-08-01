@@ -87,6 +87,7 @@ body {
     border-bottom: 0;
 
     height: 300px;
+    background-image: url('../images/capital3.jpg');
   }
 }
 
@@ -118,4 +119,34 @@ body {
 
 .the-feed hr {
   margin-top: 10px;
+}
+
+.link-span {
+  margin-left: 10px;
+}
+
+.the-feed .fa-caret-up {
+  color:green;
+  margin-left: 20px;
+}
+
+.the-feed .fa-caret-down {
+  color:red;
+  margin-left: 20px;
+}
+
+.jumbotron {
+  color: white;
+  /*text-shadow: 1px 0px 15px rgba(255, 255, 255, 0.25);*/
+  background-image: url('../images/capital3.jpg');
+
+}
+
+h1 {
+  font-size: 45px;
+font-family: 'Georgia', 'Crimson Text', serif;
+}
+/*
+h3, h2 {
+  /*font-family: 'Crimson Text', serif;/*
 }
