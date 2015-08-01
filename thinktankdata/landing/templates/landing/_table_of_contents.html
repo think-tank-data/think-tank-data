@@ -1,0 +1,33 @@
+{% load cache %}<NAV id="contents_page" class="full_page container-fluid">
+<H1 id="table_of_content_title">fashion.</H1>
+<DIV id="table_of_content_headlines">
+{% cache 7200 fashion_headlines %}{% for c in headline_collections %}<!--
+    -->{% if c.headline and c.news %}<!--
+        --><A href="{% url 'collection' c.slug %}#look1"><FIGURE
+        class="collection_list_headline_image_box {% cycle 'left_align' 'right_align' %}"><IMG
+        class="collection_list_headline_image"
+        src="{{ c.get_cover_first_look.get_front_photo.get_small.get_image_url }}"
+srcset="{{ c.get_cover_first_look.get_front_photo.get_small.get_image_url }} 1x, {{ c.get_cover_first_look.get_front_photo.get_small320.get_image_url }} 1.5x, {{ c.get_cover_first_look.get_front_photo.get_medium.get_image_url }} 2x"><FIGCAPTION
+        class="collection_list_headline_image_caption">{{ c.brand.name }}</FIGCAPTION></FIGURE></A><H3
+        class="collection_list_headline"><A
+        href="{% url 'collection' c.slug %}#look1"
+        class="collection_list_headline_text">{{ c.headline }}</A><SPAN
+        class="continue">&nbsp;&gt;&gt;&gt;&nbsp;</SPAN></H3><!--
+    -->{% endif %}<!--
+-->{% endfor %}{% endcache %}<!--
+--></DIV><!--
+--><H2 class="category_page_subtitle"><SPAN class="category_page_subtitle_text">latest</SPAN></H2><!--
+--><UL class="listingSlider fcScrollbar">{% cache 7200 latest_fashion_shows %}{% for c in latest_collections %}{% if not c.hidden %}<LI
+class="listingCard Small"><A href="{% url 'collection' c.slug %}#look1"><IMG class="listingCover"
+src="{{ c.get_cover_first_look.get_front_photo.get_small.get_image_url }}"
+srcset="{{ c.get_cover_first_look.get_front_photo.get_small.get_image_url }} 1x, {{ c.get_cover_first_look.get_front_photo.get_medium.get_image_url }} 1.5x, {{ c.get_cover_first_look.get_front_photo.get_medium.get_image_url }} 2x"
+></A><DIV
+class="listingNotes"><H3
+class="listingName"><A href="{% url 'collection' c.slug %}#look1">{{ c.get_collection_name }}</A></H3>{% if c.review %}<P
+class="listingIntro">{{ c.get_intro |safe}}</P>{% endif %}</DIV><DIV
+class="listingCategory"><PRE
+class="listingCategoryName"><A class="listingCategoryLink" href="{% url 'week' c.week.slug %}#CategoryPage">{{ c.week }}</A></PRE></DIV></LI>{% endif %}{% endfor %}{% endcache %}</UL><!--
+-->{% for week in week_list %}<!--
+--><PRE class="listingContinue"><A href="{% url 'week' week.slug %}#category_page">See all {{ week }}</A><SPAN class="continue">&nbsp;&gt;&gt;&gt;</SPAN></PRE>
+{% endfor %}
+</NAV>
