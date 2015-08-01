@@ -1,1 +1,1 @@
-web: gunicorn application:app --log-file=-
+web: cd thinktankdata && gunicorn thinktankdata.wsgi  --log-file=-
