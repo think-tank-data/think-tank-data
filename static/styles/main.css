@@ -66,7 +66,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 70%;
+    max-width: 80%;
   }
 
   /* Remove the padding we set earlier */
@@ -85,5 +85,37 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+
+    height: 300px;
   }
+}
+
+.the-feed {
+  padding-bottom: 20px;
+
+}
+
+.the-feed ul {
+  list-style: none;
+  padding-left:0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.the-feed li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.the-feed h4 {
+  text-align: center;
+}
+
+.the-feed h3.heading {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.the-feed hr {
+  margin-top: 10px;
 }
