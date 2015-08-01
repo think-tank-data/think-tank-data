@@ -1,0 +1,16 @@
+{% extends "landing/__base.html" %}
+
+{% block meta_tags %}
+        <META charset="UTF-8">
+        <META name="description" content="{{article.meta_description}}">
+        <META name="author" content="{{article.owner.first_name}} {{article.owner.last_name}}">
+        <META name="viewport" content="width=device-width, initial-scale=1">
+{% endblock %}
+
+{% block title %}FutureClaw - Fashion{% endblock %}
+
+
+{% block cover_page %}{% include "landing/_cover.html" %}{% endblock %}
+{% block contents_page %}{% include "landing/_table_of_contents.html" %}{% endblock %}
+
+

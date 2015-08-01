@@ -1,0 +1,32 @@
+{% load staticfiles i18n %}
+<!DOCTYPE html>
+
+<HTML lang="en">
+    <HEAD>
+        <META charset="UTF-8">
+        <TITLE>{% block title %}{% trans "FutureClaw" %}{% endblock %}</TITLE>
+        <META name="viewport" content="width=device-width, initial-scale=1">
+        <LINK rel="stylesheet" href="/static/css/normalize.css" type="text/css">
+        <LINK rel="stylesheet" href="/static/css/styles.css" type="text/css">
+    </HEAD>
+    <BODY><!--
+        --><DIV id="pages"><!--
+            -->{% block cover_page %}{% endblock %}<!--
+            -->{% block first_ad_page %}{% endblock %}<!--
+            -->{% block contents_page %}{% endblock %}<!--
+            -->{% block second_ad_page %}{% endblock %}<!--
+            -->{% block category_page %}{% endblock %}<!--
+            -->{% block third_ad_page %}{% endblock %}<!--
+            -->{% block article_page %}{% endblock %}
+            
+        </div><!--
+        --><DIV id="control_layer">{% block control_layer %}{% endblock %}</DIV>
+{% if not user.is_authenticated %}
+{% block sign_in_modal %}{% endblock %}
+{% block register_modal %}{% endblock %}
+{% endif %}
+
+--></BODY><!--
+--></HTML>
+
+
