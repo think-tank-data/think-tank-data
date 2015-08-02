@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="header">
+    <ul class="nav nav-pills pull-right">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <h3 class="text-muted">Think Tank Data</h3>
+  </div>
+</div>
+
+  <div class="jumbotron">
+    <h1>Currating Top Think Tank Data for Journalists</h1>
+    <!--<h2 style="font-style: italic; font-size: 25px;">for journalists around the world</h2>-->
+  </div>
+
+  <div class="container">
+
+    <div class="row marketing" style="margin-bottom: 40px;">
+      <div class="col-md-4">
+        <h2>Think Tanks</h2>
+        <p>Connect your data to our searchable index to help reporters and policy makers consume your research.</p>
+      </div>
+      <div class="col-md-4">
+        <h2>Reporters</h2>
+        <p>Search for think tank data from a single interface to quickly build your story.</p>
+      </div>
+      <div class="col-md-4">
+        <h2>Policy Makers</h2>
+        <p>Access and analyze top think tank data for faster decison-making.</p>
+      </div>
+    </div>
+    <hr style="margin-bottom: 30px;" />
+
+    <div class="row the-feed">
+      <div class="col-md-3">
+        <h4>
+          <i class="fa fa-university fa-3x"></i>
+        </h4>
+        <h3 class="heading">Top Think Tanks</h3>
+        <hr />
+        <ul>
+          <li><a href="#">Heritage Foundation</a><i class="fa fa-caret-up"></i></li>
+          <li><a href="#">Brookings Institution</a><i class="fa fa-caret-up"></i></li>
+          <li><a href="#">Cato Institute</a><i class="fa fa-caret-down"></i></li>
+          <li><a href="#">Council of Foreign Relations</a><i class="fa fa-caret-up"></i></li>
+          <li><a href="#">Carnegie Endowment for International Peace</a><i class="fa fa-caret-down"></i></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>
+          <i class="fa fa-file-o fa-3x"></i>
+        </h4>
+        <h3 class="heading">Recent Data</h3>
+        <hr />
+        <ul>
+          <li><a href="#">Why Congress Could Face a Government Shutdown This Fall</a></li>
+          <li><a href="#">Planned Parenthood and the First Amendment</a></li>
+          <li><a href="#">The New Face of the Immigration Debate</a></li>
+          <li><a href="#">Top Five Steps Government Should Take to Create Jobs</a></li>
+          <li><a href="#">Experts debate whether student loans are a crisis for students and the economy</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>
+          <i class="fa fa-balance-scale fa-3x"></i>
+        </h4>
+        <h3 class="heading">Trending Issues</h3>
+        <hr />
+        <ul>
+          <li><a href="#">Iran</a></li>
+          <li><a href="#">Climate Change</a></li>
+          <li><a href="#">Trans-Pacific Partnership (TPP)</a></li>
+          <li><a href="#">Affordable Care Act</a></li>
+          <li><a href="#">Immigration</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>
+          <i class="fa fa-map-o fa-3x"></i>
+        </h4>
+        <h3 class="heading">Top Maps</h3>
+        <hr />
+        <ul>
+          <li><a href="#">Border Wars: How Drugs come into America</a></li>
+          <li><a href="#">US Department of State: Syria Refugee Camps</a></li>
+          <li><a href="#">The New Continental: Europe's Immigration</a></li>
+          <li><a href="#">Dry Counties: California Drought Conditions</a></li>
+          <li><a href="#">The Growing Threat of ISIS</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row the-feed">
+      <div class="col-md-3 col-md-offset-3">
+        <h4>
+          <i class="fa fa-feed fa-3x"></i>
+        </h4>
+        <h3 class="heading">Latest Raw Data</h3>
+        <hr />
+        <ul>
+          <li><a href="#">Emissions Projects by Country (CSV)</a></li>
+          <li><a href="#">Global Flood Risks Country Rankings (XLS)</a></li>
+          <li><a href="#">US States Greenhouse Gas Emissions (PDF)</a></li>
+          <li><a href="#">Forest Atlas of Equatorial Guineas (GeoJSON)</a></li>
+          <li><a href="#">Mining and Critical Ecosystems GIS Study</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h4>
+          <i class="fa fa-comment-o fa-3x"></i>
+        </h4>
+        <h3 class="heading">Community</h3>
+        <hr />
+        <ul>
+          <li><a href="#">#CecilTheLion shows our misplaced values</a></li>
+          <li><a href="#">Trump's Foriegn Policy</a></li>
+          <li><a href="#">The Greek Exit from the Eurozone: It's Inevitable at this Point</a></li>
+          <li><a href="#">Solving the Women in STEM Issue</a></li>
+          <li><a href="#">This Day in History: World War I Erupts in Europe</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+{% endblock %}
