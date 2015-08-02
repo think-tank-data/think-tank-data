@@ -17,6 +17,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^thinkdata/admin/', include(admin.site.urls)),
-    url(r'^thinkdata/$', include('landing.urls')),
+    url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', include('landing.urls')),
 ]
