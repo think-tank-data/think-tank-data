@@ -12,7 +12,7 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.models import Group, Permission
 
-from .models import News
+from .models import *
 
 
 class FrontPageList(ListView):
