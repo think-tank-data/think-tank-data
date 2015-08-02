@@ -120,4 +120,8 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
+STATICFILES_DIRS = ['/home3/futurecl/think-tank-data/static']
+
 STATIC_URL = '/static/'
+
+STATIC_ROOT = '/home3/futurecl/think-tank-data/thinktankdata/static'
